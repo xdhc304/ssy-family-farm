@@ -1,0 +1,214 @@
+body {
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #409EFF;
+}
+
+.el-header {
+    height: 40px !important;
+    line-height: 40px;
+    font-size: 12px;
+    color: #fff;
+    background: #333;
+}
+
+
+.el-footer {
+    line-height: 60px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #f5f5f5;
+}
+
+.el-main {
+    padding: 20px 0 20px 0 !important;
+}
+
+.contain, .foot, .el-header> .el-row {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.foot {
+    margin-top: 20px;
+}
+
+.logo {
+    height: 60px;
+    margin-left: -5px;
+}
+
+.el-menu--horizontal {
+    border-bottom: none;
+}
+
+.el-menu--horizontal>.el-menu-item a {
+    font-size: 15px;
+}
+
+.contain {
+    padding-bottom: 18px;
+}
+
+.backcolor-dark {
+    background-color: #f5f5f5;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 200;
+    margin: 20px 0 5px;
+    color: #333;
+}
+
+.viewmore {
+    float: right;
+    margin-top: 26px;
+}
+
+.txt {
+    text-indent: 2em;
+    margin-bottom: 5px;
+    line-height: 1.9em;
+}
+
+.txt-left {
+    margin-right: 20px;
+}
+
+.txt-right {
+    margin-left: -5px;
+    width: 880px;
+}
+
+.img {
+    width: 270px;
+}
+
+.split-horizontal {
+    width: 1200px;
+    margin: 20px auto;
+    border-top: 1px solid #e0e0e0;
+    transform: scaleY(0.5);
+    -ms-transform: scaleY(0.5);	/* IE 9 */
+    -moz-transform: scaleY(0.5);	/* Firefox */
+    -webkit-transform: scaleY(0.5); /* Safari 和 Chrome */
+    -o-transform: scaleY(0.5); 	/* Opera */
+}
+
+.split-vertical {
+    border-right: 1px solid #e0e0e0;;
+}
+
+.advert {
+    display: flex;
+    justify-content: center;
+    color: #575757;
+    line-height: 25px;
+}
+
+.contact {
+    margin-left: 20px
+}
+
+.address {
+    margin-top: 10px;
+    color: #575757;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.address a {
+    color: #575757;
+}
+
+.icon {
+    margin:  3px 8px 0 0;
+    font-size: 20px;
+}
+
+.saoyisao, .call {
+    color: #575757;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.saoyisao {
+    margin-left: 4px;
+}
+
+.wechat {
+    width: 100px;
+}
+
+.tel a{
+    display: block;
+    margin-top: 8px;
+    color: #E84519;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.qq {
+    position: relative;
+    top: 3px;
+}
+
+.img-news {
+    width: 100%;
+    display: block;
+}
+
+.desc {
+    font-size: 13px;
+    color: #999;
+}
+
+.bottom-news {
+    margin-top: 13px;
+    line-height: 12px;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.news-title {
+    margin-left: 30px;
+}
+
+.news-left {
+    margin-left: 20px;
+}
+
+.news-top {
+    margin-top: 20px;
+}
+
+.news-bottom {
+    margin-bottom: 20px;
+}
+
+.news-tip {
+    float: right;
+    font-size: 12px;
+    color: #b0b0b0;
+    margin-right: 30px;
+}

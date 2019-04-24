@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8" />
+    <title>寿膳源家庭农场</title>
+    <meta name="description" content="寿县安丰塘镇寿膳源家庭农场——休闲观光生态园，集龙虾养殖、虾稻共养、休闲观光于一体。销售热线：159-0564-6116、136-0195-5735" />
+    <meta name="keywords" content="寿县,农场,寿膳源,龙虾,水稻" />
+    <meta name="viewport" content="width=1200">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <!-- import Vue before Element -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- import JavaScript -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<el-container id="app">
+    <el-header>
+        <el-row type="flex" justify="space-between">
+            <el-col :span="8">
+                <div>销售热线：159-0564-6116、136-0195-5735</div>
+            </el-col>
+        </el-row>
+    </el-header>
+    <el-main>
+        <el-row class="contain" type="flex" justify="space-between">
+            <el-col :span="6">
+                <!--<div class="logo"></div>-->
+                <a href="./index.html"><img :src="img_logo" alt="logo" class="logo"></a>
+            </el-col>
+            <el-col :span="9">
+                <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal">
+                    <el-menu-item index="1"><a href="./index.html" style="color: #409EFF">网站首页</a></el-menu-item>
+                    <el-menu-item index="2"><a href="./hotnews1.html">热点资讯</a></el-menu-item>
+                    <el-menu-item index="3"><a href="./cooperation.html">合作伙伴</a></el-menu-item>
+                    <el-menu-item index="4"><a href="./contact.html">联系我们</a></el-menu-item>
+                </el-menu>
+            </el-col>
+        </el-row>
+        <el-row class="contain">
+            <el-col>
+                <el-carousel height="460px" interval="5000">
+                    <el-carousel-item v-for="item in bannerList" :key="item">
+                        <img :src="item" alt="轮播" height="460">
+                    </el-carousel-item>
+                </el-carousel>
+            </el-col>
+        </el-row>
+        <el-row class="contain" style="margin-top: -20px">
+            <el-row>
+                <el-col :span="2">
+                    <h1 class="title">
+                        龙虾
+                    </h1>
+                </el-col>
+                <el-col :span="2" :offset="20">
+                    <div class="viewmore">
+                        <a href="./hotnews1.html">查看更多 <i class="el-icon-arrow-right"></i></a>
+                    </div>
+                </el-col>
+            </el-row>
+            <el-row>
+                <el-col :span="18">
+                    <div class="txt txt-left">
+                        克氏原螯虾俗称小龙虾，属温热带淡水虾类。
+                    </div>
+                    <div class="txt txt-left">
+                        寿膳源家庭农场的小龙虾生长在美丽富饶的安丰塘畔，这里不仅是驰名中外的旅游胜地，更是田园古朴的鱼米之乡；这里的人们勤劳朴实，常年以种植水稻为主，是寿州大米优质稻谷原产地，是国家商品粮基地；这里无工业污染，蓝天白云，鸟语花香，碧波荡漾，路林成网，是安居乐业的人间天堂。在此产出的小龙虾，虾肉细嫩，营养丰富，深受国内外消费者喜爱。
+                    </div>
+                    <div class="txt txt-left">
+                        寿膳源家庭农场致力于龙虾产业的创新和发展，利用“天下第一塘”——安丰塘来源于大别山区优质的无污染水资源和肥沃的土地资源，着力在池塘养殖，标准化养殖管理技术，标准化养殖模式设计，连锁餐饮配送等方面，努力帮助当地农户改变单一水稻种植模式，拓展致富之路。与龙虾经营者建立广泛的合作关系，使众多的合作者从中受益，达到多赢目的。
+                    </div>
+                </el-col>
+                <el-col :span="5">
+                    <!--<img src="images/xia1.jpg" alt="龙虾" class="img">-->
+                    <video width="298" controls>
+                        <source src="./images/xia.mp4" type="video/mp4">
+                    </video>
+                </el-col>
+            </el-row>
+        </el-row>
+
+        <div class="backcolor-dark">
+            <el-row class="contain">
+                <el-row>
+                    <el-col :span="4">
+                        <h1 class="title">
+                            稻虾共养
+                        </h1>
+                    </el-col>
+                </el-row>
+                <el-row>
+                    <el-col :span="5">
+                        <img src="images/dao.jpg" alt="水稻" class="img">
+                    </el-col>
+                    <el-col :span="18" :offset="1">
+                        <div class="txt txt-right">
+                            寿膳源家庭农场利用天然的无污染的土地资源和优质的水资源，以充分利用稻、虾、鱼、鸭生活生态互补优势，最大限度地挖掘稻田生产潜力。
+                        </div>
+                        <div class="txt txt-right">
+                            重点开发稻虾共生，形成一个新的复合生态系统，采用传统的栽培养殖方法，生产绿色、有机无害的健康产品。最终实现在有限的稻田内获得稻虾双高产，达到增收的目的。
+                        </div>
+                    </el-col>
+                </el-row>
+            </el-row>
+        </div>
+
+        <el-row class="contain">
+            <el-row>
+                <el-col :span="4">
+                    <h1 class="title">
+                        基地简介
+                    </h1>
+                </el-col>
+            </el-row>
+            <el-row>
+                <el-col :span="18">
+                    <div class="txt txt-left">
+                        寿膳源家庭农场——稻虾生态种养示范基地位于寿县安丰塘镇井亭村团结渠东侧、井大路北侧，一期工程占地316亩。
+                    </div>
+                    <div class="txt txt-left">
+                        项目当前依托江苏盱眙满江红龙虾产业园有限公司雄厚的技术支撑和营销网络，结合基地现状，重点推广有机水稻栽培和龙虾养殖的生产模式，实现单位土地面积经济效益的最大化，并且带动周边农户脱贫致富。
+                    </div>
+                    <div class="txt txt-left">
+                        寿膳源家庭农场计划在一期实施的基础之上，在2-3年内，逐步扩大基地面积，建设安丰塘寿膳源生态产业园区。实现有机种植，绿色养殖，产销一体化经营。培训、实习、营销一条龙服务，集种植、养殖、加工、旅游、休闲、观光为一体的现代化农业产业园。
+                    </div>
+                </el-col>
+                <el-col :span="5">
+                    <img src="images/jianjie.jpg" alt="基地简介" class="img">
+                </el-col>
+            </el-row>
+            <!--<el-row type="flex" justify="center">-->
+                <!--<el-col :span="23">-->
+                    <!--<el-carousel :interval="4000" type="card" height="100px">-->
+                        <!--<el-carousel-item v-for="item in jianjieList" :key="item">-->
+                            <!--<img :src="item" alt="基地简介" height="200">-->
+                        <!--</el-carousel-item>-->
+                    <!--</el-carousel>-->
+                <!--</el-col>-->
+            <!--</el-row>-->
+        </el-row>
+
+        <el-row type="flex" justify="space-between" class="foot">
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-star-off icon"></i>绿色大米
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-sold-out icon"></i>生态龙虾
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-picture-outline icon"></i>休闲垂钓
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-sold-out icon"></i>果蔬采摘
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="5" class="contact">
+                <div class="advert">
+                    <i class="el-icon-star-off icon"></i>苗圃花卉
+                </div>
+            </el-col>
+        </el-row>
+        <div class="split-horizontal"></div>
+
+        <el-row type="flex" justify="space-between" class="foot">
+            <el-col :span="7" class="contact">
+                <div class="call">
+                    基地位置
+                </div>
+                <div class="address">
+                    <a href="./contact.html"><i class="el-icon-location-outline icon"></i>安徽省寿县安丰塘镇井亭村井大路与团结渠交叉口</a>
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="2">
+                <div class="saoyisao">
+                    微信客服
+                </div>
+                <div class="call">
+                    <img src="./images/wechat.jpg" alt="微信" class="wechat">
+                </div>
+            </el-col>
+            <div class="split-vertical"></div>
+            <el-col :span="6">
+                <div class="call">
+                    销售热线
+                </div>
+                <div class="tel">
+                    <a href="tel:159-0564-6116">159-0564-6116</a>
+                </div>
+                <div class="tel">
+                    <a href="tel:13601955735">136-0195-5735</a>
+                </div>
+            </el-col>
+        </el-row>
+    </el-main>
+    <el-footer>
+        <el-row type="flex" justify="center">
+            <el-col :span="6" :offset="1">
+                <div>版权所有 ©2018 寿膳源家庭农场</div>
+            </el-col>
+            <el-col :span="4" :offset="1">
+                <div>皖ICP备18006854号</div>
+            </el-col>
+            <el-col :span="4" :offset="1">
+                <div>网站技术支持：
+                    <svg width="16" height="16" class="qq" xmlns="http://www.w3.org/2000/svg"><path d="M14.496 10.35c-.301-1.705-1.565-2.822-1.565-2.822.18-1.548-.481-1.823-.481-1.823C12.31.915 8.089.998 8 1 7.91.998 3.689.915 3.55 5.705c0 0-.662.275-.481 1.823 0 0-1.264 1.117-1.565 2.822 0 0-.16 2.882 1.445.353 0 0 .36.96 1.022 1.823 0 0-1.183.392-1.083 1.412 0 0-.04 1.136 2.527 1.058 0 0 1.805-.137 2.347-.882h.476c.542.745 2.347.882 2.347.882 2.566.078 2.527-1.058 2.527-1.058.1-1.02-1.083-1.412-1.083-1.412a7.986 7.986 0 0 0 1.022-1.823c1.604 2.529 1.445-.353 1.445-.353z" fill="#B3B3B3" fill-rule="evenodd"></path></svg>
+                    1171286725
+                </div>
+            </el-col>
+        </el-row>
+    </el-footer>
+</el-container>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            img_logo: './images/logo3.png',
+            img_xia: './images/longxia.jpg',
+            bannerList: ['./images/banner_xia.jpg','./images/banner.jpg'],
+            activeIndex: 1,
+            jianjieList: ['./images/chengzhang.jpg','./images/chengzhang2.jpg','./images/shouhuo1.jpg','./images/shouhuo5.jpg','./images/shouhuo2.jpg','./images/shouhuo4.jpg']
+        }
+    })
+</script>
+</html>
